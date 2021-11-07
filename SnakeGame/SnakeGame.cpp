@@ -3,6 +3,7 @@
 #include <Windows.h>
 
 bool game; 
+//Map size 
 const int width = 25;
 const int height = 25;
 //User
@@ -10,7 +11,6 @@ int x, y;
 int speed = 1;
 int tailX[100], tailY[100], tail_Lenght;
 int first_PosX, first_PosY, second_PosX, second_PosY;
-
 //Apple
 int appleX, appleY;
 //Game
@@ -32,6 +32,10 @@ void game_Setup() {
 	while (x == appleX && y == appleY) {
 		x = rand() % width;
 		y = rand() % height;
+		appleX = rand() % width;
+		appleY = rand() % height;
+	}
+	while (first_PosX == appleX && first_PosY == appleY) {
 		appleX = rand() % width;
 		appleY = rand() % height;
 	}

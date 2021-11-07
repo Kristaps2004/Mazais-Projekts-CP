@@ -21,7 +21,7 @@
     Ja čūska ieskrien savā ķermenī vai sienā spēle beidzas
 ## Izmantotās tehnoloģijas
     C++
-    Terminālis
+    Terminālis un Windows.h
     conio.h
 ## Izmantotie avoti
     - 
